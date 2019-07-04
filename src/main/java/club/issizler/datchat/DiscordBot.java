@@ -61,6 +61,9 @@ class DiscordBot implements EventListener {
         if (!messageReceivedEvent.isFromType(ChannelType.TEXT))
             return;
 
+        if (messageReceivedEvent.getChannel().getIdLong() != config.getLong("discord.channelID"))
+            return;
+
         String message = String.format((String) config.get("minecraft.format"), messageReceivedEvent.getMember().getEffectiveName(), messageReceivedEvent.getMessage().getContentDisplay());
 
         // Switch these whenever Okyanus 0.3.0 comes out

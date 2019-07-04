@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
-  "id": "mod-template",
+  "id": "datchat",
   "version": "${version}",
-  "name": "Mod Template",
-  "description": "The mod template for Okyanus",
+  "name": "DatChat",
+  "description": "Discord chat integration for Fabric servers",
   "environment": "server",
   "depends": {
     "fabricloader": ">=0.4.8",
-    "okyanus": ">=0.1.0"
+    "okyanus": ">=0.2.0"
   },
   "entrypoints": {
     "server": [
-      "club.issizler.template.TemplateMod::init"
+      "club.issizler.datchat.DatChatMod::init"
     ]
   }
 }

@@ -1,0 +1,27 @@
+# DatChat configuration file
+
+
+[discord]
+
+# Your Discord bot token
+# Available from https://discordapp.com/developers/applications/
+token = ""
+
+# ID of the channel inside the guild to send your messages to.
+# You can get this by right clicking on the channel, and selecting "Copy ID"
+# (You might need to enable developer options at "Appearance > Developer Mode")
+channelID = 123456789
+
+# Discord chat messages format
+# First %s is the user nickname,
+# Second %s is the messsage.
+format = "%s: %s"
+
+
+[minecraft]
+
+# Minecraft chat messages format
+# First %s is the user nickname,
+# Second %s is the messsage.
+# Color supported with the § character.
+format = "<%s> %s"
